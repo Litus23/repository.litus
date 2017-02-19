@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.cine" name="Cine" version="1.0.23" provider-name="Topo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Cine</summary>
+    <description>Addon de Cine</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="repository.litus" name="Litus repository" version="1.0.0" provider-name="Litus">
+	<extension point="xbmc.addon.repository" name="Litus Repository">
+		<info compressed="false">http://raw.github.com/Litus23/repository.litus/master/addons.xml</info>
+		<checksum>http://raw.github.com/Litus23/repository.litus/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Litus23/repository.litus/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>litus Addon</summary>
+		<description>Repositorio con todo lo necesario para instalar sin problemas litus.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon
+</addons>
