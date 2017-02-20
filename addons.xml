@@ -48,6 +48,36 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.sapoaddon"
+       name="SAPOIPTV"
+       version="0.0.2"
+       provider-name="entreunosyceros">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+	<import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>SAPOIPTV - entreunosyceros</summary>
+    <description>Addon creado solo con la intenciÃ³n de aprender. Se pone a disposiciÃ³n de quiÃ©n lo necesite tan solo con fines didÃ¡cticos. Para su perfecto funcionamiento es necesario tener instalado f4mtester, SportDevil (en su Ãºltima versiÃ³n) y urlResolver para su correcto funcionamiento. Los enlaces han sido obtenidos de forma legal por internet mediante el navegador firefox. No soy responsable ni de los contenidos ni de la estabilidad de los mismos. Los canales son tomados de pÃ¡ginas web que emiten en abierto la seÃ±al para todo el mundo. Este addon no busca generar beneficios ni pÃ©rdidas a nadie.
+ </description>
+  <disclaimer>La mayorÃ­a de los canales son obtenidos directamente de pÃ¡ginas web. Si las pÃ¡ginas dejan de emitir o cambian su configuraciÃ³n, el plugin dejarÃ¡ de recibir seÃ±al. Los canales caÃ­dos se repondrÃ¡n a medida que se pueda. Cuando un canal no cargue a la primera, se recomienda intentar acceder a el varias veces. En ocasiones las pÃ¡ginas tardan en enviar la seÃ±al correspondiente.
+ </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.catoal" name="Catoal repository" version="1.0.2" provider-name="Catoal">
 	<extension point="xbmc.addon.repository" name="Catoal Repository">
 		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
@@ -72,6 +102,38 @@
 		<summary>Third party Kodi addons updates/mods</summary>
 		<description>Repositorio con todo lo necesario para instalar sin problemas Litus</description>
 		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.8" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+    <dir>
+            <info compressed="false">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml</info>
+            <checksum>https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/zips</datadir>
+    </dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.exodus.metadata" version="1.0.0" name="Exodus Metadata" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Exodus Addon</summary>
+		<description>Metadata for Exodus are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -135,6 +197,44 @@
             <screenshot>resources/screenshots/screenshot3.PNG</screenshot>
         </assets>
     </extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="2.9.0"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="3.0.26" provider-name="tvaddons.ag, Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+	</extension>
 </addon>
 
 <addon id="script.plex"
