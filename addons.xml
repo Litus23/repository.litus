@@ -33,8 +33,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">PelÃ­culas y series a la carta</summary>
-    <description lang="es">PelÃ­culas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en EspaÃ±ol, Italiano e InglÃ©s.</description>
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
     <summary lang="en">Movies and TV Shows on demand</summary>
     <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
     <platform>all</platform>
@@ -70,10 +70,40 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>SAPOIPTV - entreunosyceros</summary>
-    <description>Addon creado solo con la intenciÃ³n de aprender. Se pone a disposiciÃ³n de quiÃ©n lo necesite tan solo con fines didÃ¡cticos. Para su perfecto funcionamiento es necesario tener instalado f4mtester, SportDevil (en su Ãºltima versiÃ³n) y urlResolver para su correcto funcionamiento. Los enlaces han sido obtenidos de forma legal por internet mediante el navegador firefox. No soy responsable ni de los contenidos ni de la estabilidad de los mismos. Los canales son tomados de pÃ¡ginas web que emiten en abierto la seÃ±al para todo el mundo. Este addon no busca generar beneficios ni pÃ©rdidas a nadie.
+    <description>Addon creado solo con la intención de aprender. Se pone a disposición de quién lo necesite tan solo con fines didácticos. Para su perfecto funcionamiento es necesario tener instalado f4mtester, SportDevil (en su última versión) y urlResolver para su correcto funcionamiento. Los enlaces han sido obtenidos de forma legal por internet mediante el navegador firefox. No soy responsable ni de los contenidos ni de la estabilidad de los mismos. Los canales son tomados de páginas web que emiten en abierto la señal para todo el mundo. Este addon no busca generar beneficios ni pérdidas a nadie.
  </description>
-  <disclaimer>La mayorÃ­a de los canales son obtenidos directamente de pÃ¡ginas web. Si las pÃ¡ginas dejan de emitir o cambian su configuraciÃ³n, el plugin dejarÃ¡ de recibir seÃ±al. Los canales caÃ­dos se repondrÃ¡n a medida que se pueda. Cuando un canal no cargue a la primera, se recomienda intentar acceder a el varias veces. En ocasiones las pÃ¡ginas tardan en enviar la seÃ±al correspondiente.
+  <disclaimer>La mayoría de los canales son obtenidos directamente de páginas web. Si las páginas dejan de emitir o cambian su configuración, el plugin dejará de recibir señal. Los canales caídos se repondrán a medida que se pueda. Cuando un canal no cargue a la primera, se recomienda intentar acceder a el varias veces. En ocasiones las páginas tardan en enviar la señal correspondiente.
  </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.TvGratis 3.4"
+       name="TvGratis 3.4"
+       version="3.4"
+       provider-name="TvGratis 3.4">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Gracias por usar TvGratis 3.4</summary>
+    <description>TvGratis 3.4, todo el contenido que se muestra en el addon ha sido buscado y recopilado en la red,este addon es gratuito si te cobran por el te estan engañando.....</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -164,7 +194,7 @@
   <extension point='xbmc.addon.metadata'>
     <platform>all</platform>
     <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
-    <summary lang='ru'>script.module.libtorrent - Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Kodi, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ ÑƒÐ¿Ñ€Ð¾Ñ‰Ð°ÐµÑ‚ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ python-libtorrent.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
     <license>MIT License</license>
     <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
   </extension>
